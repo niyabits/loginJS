@@ -40,7 +40,7 @@
 			
 			
 			// Defining a function for it.
-			var checkDetails = function() {
+			var checkDetails = function(e) {
 				var idValueEl = document.getElementById("id").value; // El = Element
 				var passwordValueEl = document.getElementById("password").value; // El = Element
 				var idOne = "admin";
@@ -53,6 +53,8 @@
 				else {
 					alert("The ID and Password you have entered are not correct please try again.");				
 				}
+				
+				e.preventDefault();
 			}
 			
 			console.log("idEl");
